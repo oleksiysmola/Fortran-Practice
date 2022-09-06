@@ -29,6 +29,15 @@ PROGRAM FortranProgramme ! Indicates start of programme
     ! Reading from screen input
     WRITE(*,*) "What is the value of x?"
     READ(*,*) x
-    WRITE(*,*) "x is equal to ", x
+    WRITE(*,*) "What is the value of y?"
+    READ(*,*) y
+    WRITE(*,*) "The sum of x and y is", x + y
+
+    ! Reading from a file
+    OPEN(11,file="input.dat")
+    READ(11,*) x
+    READ(11,*) y
+    CLOSE(11)
+    WRITE(*,*) "The value of x/y is ", x/y
     
 END PROGRAM FortranProgramme ! Indicates end of programme 
