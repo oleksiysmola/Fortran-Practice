@@ -23,5 +23,12 @@ PROGRAM FortranProgramme ! Indicates start of programme
     ! Writes to file
     OPEN(10,file="data.dat")
     WRITE(10,*) "The value of x is ", x
+    WRITE(10,*) "The value of y is ", y
+    CLOSE(10)
+
+    ! Reading from screen input
+    WRITE(*,*) "What is the value of x?"
+    READ(*,*) x
+    WRITE(*,*) "x is equal to ", x
     
 END PROGRAM FortranProgramme ! Indicates end of programme 
