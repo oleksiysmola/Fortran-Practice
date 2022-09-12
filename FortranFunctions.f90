@@ -22,9 +22,9 @@ PROGRAM FortranFunctions
     
 END PROGRAM FortranFunctions
 
-FUNCTION f(x)
-    IMPLICIT NONE
-    REAL :: f,x,a
-    f = cos(x+a)
+! FUNCTION f(x)
+!     IMPLICIT NONE
+!     REAL :: f,x,a
+!     f = cos(x+a)
     
-END FUNCTION f
+! END FUNCTION f
