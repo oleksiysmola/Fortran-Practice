@@ -1,7 +1,7 @@
 PROGRAM FortranFunctions
     IMPLICIT NONE
     INTEGER :: i
-    REAL :: x
+    REAL :: x, f
     REAL, PARAMETER :: xmin = 0.,xmax=10., a=-2.
     
     OPEN(10,file="myplot.dat")
@@ -12,12 +12,19 @@ PROGRAM FortranFunctions
     ENDDO
     
     CLOSE(10)
-    CONTAINS
+    ! CONTAINS
     
-    FUNCTION f(x)
-    IMPLICIT NONE
-    REAL :: f,x
-    f = cos(x+a)
-    END FUNCTION f
+    ! FUNCTION f(x)
+    ! IMPLICIT NONE
+    ! REAL :: f,x
+    ! f = cos(x+a)
+    ! END FUNCTION f
     
 END PROGRAM FortranFunctions
+
+FUNCTION f(x)
+    IMPLICIT NONE
+    REAL :: f,x,a
+    f = cos(x+a)
+    
+END FUNCTION f
