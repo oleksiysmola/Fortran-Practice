@@ -22,6 +22,8 @@ PROGRAM AddMatrices
     ENDDO
 
     ! Print result
-    WRITE(*,*) c
+    DO i=1, matrixDimensions
+        WRITE(*,*) (c(i, j), j=1, matrixDimensions)
+    ENDDO
 
 END PROGRAM AddMatrices
