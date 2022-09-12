@@ -39,5 +39,5 @@ PROGRAM FortranProgramme ! Indicates start of programme
     READ(11,*) y
     CLOSE(11)
     WRITE(*,*) "The value of x/y is ", x/y
-    
+
 END PROGRAM FortranProgramme ! Indicates end of programme 
